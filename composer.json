@@ -13,7 +13,7 @@
   ],
   "require": {
     "php": ">=7",
-    "nesbot/carbon": "^2.10",
+    "nesbot/carbon": "*",
     "ext-simplexml": "*",
     "ext-curl": "*",
     "ext-iconv": "*"
