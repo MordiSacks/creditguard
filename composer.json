@@ -1,0 +1,29 @@
+{
+  "name": "mordisacks/creditguard",
+  "description": "CreditGuard Payment gateway ",
+  "keywords": [
+    "creditguard",
+    "payments"
+  ],
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "Mordi Sacks"
+    }
+  ],
+  "require": {
+    "php": ">=7",
+    "nesbot/carbon": "^2.10",
+    "ext-simplexml": "*",
+    "ext-curl": "*",
+    "ext-iconv": "*"
+  },
+  "autoload": {
+    "psr-4": {
+      "CreditGuard\\": "src/CreditGuard"
+    }
+  },
+  "require-dev": {
+    "symfony/var-dumper": "^4.2"
+  }
+}
