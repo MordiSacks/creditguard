@@ -622,7 +622,7 @@ class DoDealRedirectRequest extends AbstractRequest
      *
      * @return string
      */
-    public function getUserData1() { return $this->get('userData1'); }
+    public function getUserData1() { return $this->commandXml->customerData->userData1; }
 
     /**
      * <b>CG Type:</b> AlphaNumeric (256)
@@ -637,7 +637,11 @@ class DoDealRedirectRequest extends AbstractRequest
      *
      * @return static
      */
-    public function setUserData1(string $value) { return $this->set('userData1', $value); }
+    public function setUserData1(string $value)
+    {
+        $this->commandXml->customerData->userData1 = $value;
+        return $this;
+    }
 
 
     /**
@@ -645,7 +649,7 @@ class DoDealRedirectRequest extends AbstractRequest
      *
      * @return string
      */
-    public function getUserData2() { return $this->get('userData2'); }
+    public function getUserData2() { return $this->commandXml->customerData->userData2; }
 
     /**
      * <b>CG Type:</b> AlphaNumeric (256)
@@ -660,7 +664,11 @@ class DoDealRedirectRequest extends AbstractRequest
      *
      * @return static
      */
-    public function setUserData2(string $value) { return $this->set('userData2', $value); }
+    public function setUserData2(string $value)
+    {
+        $this->commandXml->customerData->userData2 = $value;
+        return $this;
+    }
 
 
     /**
@@ -668,7 +676,7 @@ class DoDealRedirectRequest extends AbstractRequest
      *
      * @return string
      */
-    public function getUserData3() { return $this->get('userData3'); }
+    public function getUserData3() { return $this->commandXml->customerData->userData3; }
 
     /**
      * <b>CG Type:</b> AlphaNumeric (256)
@@ -683,7 +691,11 @@ class DoDealRedirectRequest extends AbstractRequest
      *
      * @return static
      */
-    public function setUserData3(string $value) { return $this->set('userData3', $value); }
+    public function setUserData3(string $value)
+    {
+        $this->commandXml->customerData->userData3 = $value;
+        return $this;
+    }
 
 
     /**
@@ -691,7 +703,7 @@ class DoDealRedirectRequest extends AbstractRequest
      *
      * @return string
      */
-    public function getUserData4() { return $this->get('userData4'); }
+    public function getUserData4() { return $this->commandXml->customerData->userData4; }
 
     /**
      * <b>CG Type:</b> AlphaNumeric (256)
@@ -706,7 +718,11 @@ class DoDealRedirectRequest extends AbstractRequest
      *
      * @return static
      */
-    public function setUserData4(string $value) { return $this->set('userData4', $value); }
+    public function setUserData4(string $value)
+    {
+        $this->commandXml->customerData->userData4 = $value;
+        return $this;
+    }
 
 
     /**
@@ -714,7 +730,7 @@ class DoDealRedirectRequest extends AbstractRequest
      *
      * @return string
      */
-    public function getUserData5() { return $this->get('userData5'); }
+    public function getUserData5() { return $this->commandXml->customerData->userData5; }
 
     /**
      * <b>CG Type:</b> AlphaNumeric (256)
@@ -729,7 +745,11 @@ class DoDealRedirectRequest extends AbstractRequest
      *
      * @return static
      */
-    public function setUserData5(string $value) { return $this->set('userData5', $value); }
+    public function setUserData5(string $value)
+    {
+        $this->commandXml->customerData->userData5 = $value;
+        return $this;
+    }
 
 
     /**
@@ -737,7 +757,7 @@ class DoDealRedirectRequest extends AbstractRequest
      *
      * @return string
      */
-    public function getUserData6() { return $this->get('userData6'); }
+    public function getUserData6() { return $this->commandXml->customerData->userData6; }
 
     /**
      * <b>CG Type:</b> AlphaNumeric (256)
@@ -752,7 +772,11 @@ class DoDealRedirectRequest extends AbstractRequest
      *
      * @return static
      */
-    public function setUserData6(string $value) { return $this->set('userData6', $value); }
+    public function setUserData6(string $value)
+    {
+        $this->commandXml->customerData->userData6 = $value;
+        return $this;
+    }
 
 
     /**
@@ -760,7 +784,7 @@ class DoDealRedirectRequest extends AbstractRequest
      *
      * @return string
      */
-    public function getUserData7() { return $this->get('userData7'); }
+    public function getUserData7() { return $this->commandXml->customerData->userData7; }
 
     /**
      * <b>CG Type:</b> AlphaNumeric (256)
@@ -775,7 +799,11 @@ class DoDealRedirectRequest extends AbstractRequest
      *
      * @return static
      */
-    public function setUserData7(string $value) { return $this->set('userData7', $value); }
+    public function setUserData7(string $value)
+    {
+        $this->commandXml->customerData->userData7 = $value;
+        return $this;
+    }
 
 
     /**
@@ -783,7 +811,7 @@ class DoDealRedirectRequest extends AbstractRequest
      *
      * @return string
      */
-    public function getUserData8() { return $this->get('userData8'); }
+    public function getUserData8() { return $this->commandXml->customerData->userData8; }
 
     /**
      * <b>CG Type:</b> AlphaNumeric (256)
@@ -798,7 +826,11 @@ class DoDealRedirectRequest extends AbstractRequest
      *
      * @return static
      */
-    public function setUserData8(string $value) { return $this->set('userData8', $value); }
+    public function setUserData8(string $value)
+    {
+        $this->commandXml->customerData->userData8 = $value;
+        return $this;
+    }
 
 
     /**
@@ -806,7 +838,7 @@ class DoDealRedirectRequest extends AbstractRequest
      *
      * @return string
      */
-    public function getUserData9() { return $this->get('userData9'); }
+    public function getUserData9() { return $this->commandXml->customerData->userData9; }
 
     /**
      * <b>CG Type:</b> AlphaNumeric (256)
@@ -821,7 +853,11 @@ class DoDealRedirectRequest extends AbstractRequest
      *
      * @return static
      */
-    public function setUserData9(string $value) { return $this->set('userData9', $value); }
+    public function setUserData9(string $value)
+    {
+        $this->commandXml->customerData->userData9 = $value;
+        return $this;
+    }
 
 
     /**
@@ -829,7 +865,7 @@ class DoDealRedirectRequest extends AbstractRequest
      *
      * @return string
      */
-    public function getUserData10() { return $this->get('userData10'); }
+    public function getUserData10() { return $this->commandXml->customerData->userData10; }
 
     /**
      * <b>CG Type:</b> AlphaNumeric (256)
@@ -844,7 +880,11 @@ class DoDealRedirectRequest extends AbstractRequest
      *
      * @return static
      */
-    public function setUserData10(string $value) { return $this->set('userData10', $value); }
+    public function setUserData10(string $value)
+    {
+        $this->commandXml->customerData->userData10 = $value;
+        return $this;
+    }
 
 
     /**
