@@ -68,6 +68,12 @@ class DoDealResponse extends AbstractResponse
         return (string)$this->doDeal->{$field} ?: null;
     }
 
+    public function getCardId()
+    {
+        $field = static::_getterToField(__FUNCTION__);
+        return (string)$this->doDeal->{$field} ?: null;
+    }
+
     public function getCardNo()
     {
         $field = static::_getterToField(__FUNCTION__);
