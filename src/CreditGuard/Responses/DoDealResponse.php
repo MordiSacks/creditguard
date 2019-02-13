@@ -386,4 +386,10 @@ class DoDealResponse extends AbstractResponse
         return (string)$this->doDeal->{$field} ?: null;
     }
 
+    public function getCustomerData()
+    {
+        $field = static::_getterToField(__FUNCTION__);
+        return (array)$this->doDeal->{$field} ?: [];
+    }
+
 }
