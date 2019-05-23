@@ -34,7 +34,7 @@ abstract class AbstractRequest
 
         $this->setRequestId()
              ->setDateTime(Carbon::now())
-             ->setVersion('1001')
+             ->setVersion('2000')
              ->setLanguage(Language::ENGLISH)
              ->setMayBeDuplicate();
 
