@@ -215,11 +215,11 @@ class DoDealRedirectRequest extends AbstractRequest
      * Currency code,
      * According to ISO-4217
      *
-     * @see Currency
-     *
      * @param string $value
      *
      * @return static
+     * @see Currency
+     *
      */
     public function setCurrency(string $value) { return $this->set('currency', $value); }
 
@@ -242,11 +242,11 @@ class DoDealRedirectRequest extends AbstractRequest
      * Card holder is charged
      * Or card holder is credited.
      *
-     * @see TransactionType
-     *
      * @param string $value
      *
      * @return static
+     * @see TransactionType
+     *
      */
     public function setTransactionType(string $value) { return $this->set('transactionType', $value); }
 
@@ -273,11 +273,11 @@ class DoDealRedirectRequest extends AbstractRequest
      * <br>
      * Credit type
      *
-     * @see CreditType
-     *
      * @param string $value
      *
      * @return static
+     * @see CreditType
+     *
      */
     public function setCreditType(string $value) { return $this->set('creditType', $value); }
 
@@ -306,11 +306,11 @@ class DoDealRedirectRequest extends AbstractRequest
      * Please see XML API for further
      * details
      *
-     * @see TransactionCode
-     *
      * @param string $value
      *
      * @return static
+     * @see TransactionCode
+     *
      */
     public function setTransactionCode(string $value) { return $this->set('transactionCode', $value); }
 
@@ -560,11 +560,11 @@ class DoDealRedirectRequest extends AbstractRequest
      * refer to "validation" tag XML
      * API documentation
      *
-     * @see MpiValidation
-     *
      * @param string $value
      *
      * @return static
+     * @see MpiValidation
+     *
      */
     public function setMpiValidation(string $value) { return $this->set('mpiValidation', $value); }
 
@@ -591,7 +591,12 @@ class DoDealRedirectRequest extends AbstractRequest
      *
      * @return static
      */
-    public function setDescription(string $value) { return $this->set('description', $value); }
+    public function setDescription(string $value)
+    {
+        // Filter all illegal chars as described on CG's errors
+        $value = preg_replace('/[^a-zA-Zא-תF0-9_:\- ]/', '', $value);
+        return $this->set('description', $value);
+    }
 
 
     /**
