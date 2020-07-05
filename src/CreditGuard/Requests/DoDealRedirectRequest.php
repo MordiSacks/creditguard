@@ -430,6 +430,36 @@ class DoDealRedirectRequest extends AbstractRequest
 
 
     /**
+     * This option adds to the total amount a specific interest that can change for each
+     * value of number of payments that is chosen in the dropdown list.
+     * The interest will be displayed in the payment page separately
+     * The interest tag value is defined as a list of amounts and the number of list
+     * elements will be same as the number of list elements in 'numberOfPayments'
+     * The interest item value is the absolute interest amount in cents/agorot
+     * (100 ILS will be 10000)
+     * Zero (0) value is considered as no interest
+     *
+     * @return string
+     */
+    public function getPaymentsInterest() { return $this->get('paymentsInterest'); }
+
+    /**
+     * This option adds to the total amount a specific interest that can change for each
+     * value of number of payments that is chosen in the dropdown list.
+     * The interest will be displayed in the payment page separately
+     * The interest tag value is defined as a list of amounts and the number of list
+     * elements will be same as the number of list elements in 'numberOfPayments'
+     * The interest item value is the absolute interest amount in cents/agorot
+     * (100 ILS will be 10000)
+     * Zero (0) value is considered as no interest
+     *
+     * @param string $value
+     *
+     * @return static
+     */
+    public function setPaymentsInterest(string $value) { return $this->set('paymentsInterest', $value); }
+
+    /**
      * User data
      * Transaction identifier
      * (X Field)
