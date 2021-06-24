@@ -952,4 +952,22 @@ class DoDealRedirectRequest extends AbstractRequest
      */
     public function setMainTerminalNumber(string $value) { return $this->set('mainTerminalNumber', $value); }
 
+	/**
+	 * Invoice as
+	 * defined for the
+	 * merchant at CG
+	 * Gateway within the
+	 * integration process
+	 *
+	 * @param $key
+	 * @param string $value
+	 *
+	 * @return $this
+	 */
+	public function setInvoiceParam( $key, string $value ) {
+		$this->commandXml->invoice->{$key} = $value;
+
+		return $this;
+	}
+
 }
