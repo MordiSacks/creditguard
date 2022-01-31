@@ -970,4 +970,9 @@ class DoDealRedirectRequest extends AbstractRequest
 		return $this;
 	}
 
+	public function setPaymentPageData($key, $value){
+	    $this->commandXml->paymentPageData->{$key} = $value;
+	    return $this;
+    }
+
 }
