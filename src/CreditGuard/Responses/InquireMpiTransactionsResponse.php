@@ -122,4 +122,22 @@ class InquireMpiTransactionsResponse extends AbstractResponse
         $field = static::_getterToField(__FUNCTION__);
         return (string)$this->inquireTransactions->row->{$field} ?: null;
     }
+
+    public function getCardBrand()
+    {
+        $field = static::_getterToField(__FUNCTION__);
+        return (string)$this->inquireTransactions->row->{$field} ?: null;
+    }
+
+    public function getCardCompany()
+    {
+        $field = static::_getterToField(__FUNCTION__);
+        return (string)$this->inquireTransactions->row->{$field} ?: null;
+    }
+
+    public function getCardType()
+    {
+        $field = static::_getterToField(__FUNCTION__);
+        return (string)$this->inquireTransactions->row->{$field} ?: null;
+    }
 }
