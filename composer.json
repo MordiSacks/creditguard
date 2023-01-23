@@ -1,5 +1,5 @@
 {
-  "name": "mordisacks/creditguard",
+  "name": "tomerof/creditguard-1",
   "description": "CreditGuard Payment gateway ",
   "keywords": [
     "creditguard",
@@ -8,7 +8,7 @@
   "license": "MIT",
   "authors": [
     {
-      "name": "Mordi Sacks"
+      "name": "Tomer Ofer"
     }
   ],
   "require": {
